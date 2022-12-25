@@ -1,0 +1,8 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Level.gd" id="1_88wt0"]
+[ext_resource type="AudioStream" uid="uid://cmoxwotk6gc0" path="res://Assets/Sounds/125_Drumloop_04_35_SP.wav" id="2_qqdks"]
+[ext_resource type="PackedScene" uid="uid://braosp0cjrtsu" path="res://Scenes/tile_map.tscn" id="3_38nqj"]
+[ext_resource type="PackedScene" uid="uid://cdvc5e4c1cpf3" path="res://Scenes/Finish.tscn" id="4_0ndtr"]
+[ext_resource type="PackedScene" uid="uid://g7wwmk3rtsch" path="res://Scenes/Start.tscn" id="5_htxds"]
+[ext_resource type="PackedScene" uid="uid://txaqaxcmb64b" path="res://Scenes/Enemy.tscn" id="6_eguto"]

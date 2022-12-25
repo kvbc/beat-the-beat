@@ -1,0 +1,262 @@
+[gd_scene load_steps=8 format=3 uid="uid://l0gvilvrgvmq"]
+
+[ext_resource type="Script" path="res://Scripts/AL_UI.gd" id="1_mpgo2"]
+[ext_resource type="Texture2D" uid="uid://cvh4tvm6fg4r1" path="res://Assets/Images/spacebar.png" id="2_vngwy"]
+[ext_resource type="Texture2D" uid="uid://0lox8nhxg6j5" path="res://Assets/Images/floor.png" id="2_yikk7"]
+[ext_resource type="Texture2D" uid="uid://dyr8oe227glwq" path="res://Assets/Images/deaths.png" id="3_k6qah"]
+[ext_resource type="Texture2D" uid="uid://bmot2uv3t4xby" path="res://Assets/Images/trophy.png" id="4_c4lpy"]
+[ext_resource type="Texture2D" uid="uid://36dkt3784i7e" path="res://Assets/Images/key.png" id="4_nb7ow"]
+[ext_resource type="FontFile" uid="uid://b6aik8xykusge" path="res://Assets/Fonts/upheavtt.ttf" id="7_d5frh"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_mpgo2")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Start" type="Control" parent="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control/Start"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.580392)
+
+[node name="TextureRect" type="TextureRect" parent="Control/Start"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -68.0
+offset_top = -36.0
+offset_right = 68.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_vngwy")
+
+[node name="Label" type="Label" parent="Control/Start"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -119.0
+offset_top = -123.0
+offset_right = 119.0
+offset_bottom = -41.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_d5frh")
+theme_override_font_sizes/font_size = 100
+text = "Start"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="End" type="Control" parent="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control/End"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.580392)
+
+[node name="uwon" type="Label" parent="Control/End"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -142.5
+offset_top = -83.0
+offset_right = 142.5
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("7_d5frh")
+theme_override_font_sizes/font_size = 100
+text = "u won"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="congrats" type="Label" parent="Control/End"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -752.5
+offset_top = -40.5
+offset_right = 752.5
+offset_bottom = 52.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_fonts/font = ExtResource("7_d5frh")
+theme_override_font_sizes/font_size = 25
+text = "congratulations my brother"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="deaths" type="Label" parent="Control/End"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -748.0
+offset_top = 193.0
+offset_right = 757.0
+offset_bottom = 286.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_fonts/font = ExtResource("7_d5frh")
+theme_override_font_sizes/font_size = 25
+text = "DEATHS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="deaths2" type="Label" parent="Control/End"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -507.0
+offset_top = 193.0
+offset_right = 998.0
+offset_bottom = 286.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_fonts/font = ExtResource("7_d5frh")
+theme_override_font_sizes/font_size = 25
+text = "KEY PRESSES"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Control/End"]
+offset_left = 595.0
+offset_top = 199.0
+offset_right = 659.0
+offset_bottom = 263.0
+texture = ExtResource("4_c4lpy")
+
+[node name="BottomBar" type="Control" parent="Control"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -64.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="ColorRect" type="ColorRect" parent="Control/BottomBar"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.286275, 0.301961, 0.494118, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/BottomBar"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Level" type="HBoxContainer" parent="Control/BottomBar/HBoxContainer"]
+offset_left = 294.0
+offset_right = 381.0
+offset_bottom = 64.0
+size_flags_horizontal = 10
+theme_override_constants/separation = 10
+
+[node name="TextureRect" type="TextureRect" parent="Control/BottomBar/HBoxContainer/Level"]
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("2_yikk7")
+
+[node name="Label" type="Label" parent="Control/BottomBar/HBoxContainer/Level"]
+offset_left = 74.0
+offset_right = 87.0
+offset_bottom = 64.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("7_d5frh")
+theme_override_font_sizes/font_size = 50
+text = "1"
+vertical_alignment = 1
+
+[node name="Deaths" type="HBoxContainer" parent="Control/BottomBar/HBoxContainer"]
+offset_left = 523.0
+offset_right = 627.0
+offset_bottom = 64.0
+size_flags_horizontal = 6
+theme_override_constants/separation = 10
+
+[node name="TextureRect" type="TextureRect" parent="Control/BottomBar/HBoxContainer/Deaths"]
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("3_k6qah")
+
+[node name="Label" type="Label" parent="Control/BottomBar/HBoxContainer/Deaths"]
+offset_left = 74.0
+offset_right = 104.0
+offset_bottom = 64.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("7_d5frh")
+theme_override_font_sizes/font_size = 50
+text = "0"
+vertical_alignment = 1
+
+[node name="Keypresses" type="HBoxContainer" parent="Control/BottomBar/HBoxContainer"]
+offset_left = 770.0
+offset_right = 874.0
+offset_bottom = 64.0
+size_flags_horizontal = 2
+theme_override_constants/separation = 10
+
+[node name="TextureRect" type="TextureRect" parent="Control/BottomBar/HBoxContainer/Keypresses"]
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("4_nb7ow")
+
+[node name="Label" type="Label" parent="Control/BottomBar/HBoxContainer/Keypresses"]
+offset_left = 74.0
+offset_right = 104.0
+offset_bottom = 64.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("7_d5frh")
+theme_override_font_sizes/font_size = 50
+text = "0"
+vertical_alignment = 1

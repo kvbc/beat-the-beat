@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "CharacterBody2D",
+"class": &"Player",
+"language": &"GDScript",
+"path": "res://Scripts/Player.gd"
+}]
+_global_script_class_icons={
+"Player": ""
+}
+
+[application]
+
+config/name="beat the beat"
+run/main_scene="res://Scenes/AL_Global.tscn"
+config/features=PackedStringArray("4.0", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+ALGlobal="*res://Scenes/AL_Global.tscn"
+ALUI="*res://Scenes/AL_UI.tscn"
+ALSignals="*res://Scripts/AL_Signals.gd"
+
+[display]
+
+window/size/viewport_height=640
+window/stretch/mode="viewport"

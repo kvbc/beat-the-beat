@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c65a88g3vvcpr"]
+
+[ext_resource type="Script" path="res://Scripts/AL_Global.gd" id="1_1p56r"]
+[ext_resource type="AudioStream" uid="uid://bqy7vooicoo20" path="res://Assets/Sounds/death.wav" id="2_urbyb"]
+
+[node name="AL_Global" type="Node2D"]
+script = ExtResource("1_1p56r")
+
+[node name="Death" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_urbyb")
+volume_db = -10.0

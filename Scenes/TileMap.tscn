@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://braosp0cjrtsu"]
+
+[ext_resource type="Texture2D" uid="uid://bhawndy6uhdeq" path="res://Assets/Images/wall.png" id="1_qhj14"]
+[ext_resource type="Texture2D" uid="uid://d1cumcybjjmob" path="res://Assets/Images/background.png" id="2_gm5qs"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rg8wp"]
+texture = ExtResource("1_qhj14")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qucut"]
+texture = ExtResource("2_gm5qs")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_odfhp"]
+tile_size = Vector2i(64, 64)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_rg8wp")
+sources/1 = SubResource("TileSetAtlasSource_qucut")
+
+[node name="TileMap" type="TileMap"]
+tile_set = SubResource("TileSet_odfhp")
+format = 2
